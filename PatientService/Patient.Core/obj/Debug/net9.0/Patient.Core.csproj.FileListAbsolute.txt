@@ -1,0 +1,15 @@
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\bin\Debug\net9.0\Patient.Core.deps.json
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\bin\Debug\net9.0\Patient.Core.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\bin\Debug\net9.0\Patient.Core.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\bin\Debug\net9.0\Patient.Models.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\bin\Debug\net9.0\Patient.Models.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.csproj.AssemblyReference.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.AssemblyInfoInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.AssemblyInfo.cs
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.csproj.CoreCompileInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient..98E4AA47.Up2Date
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\refint\Patient.Core.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\ref\Patient.Core.dll

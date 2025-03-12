@@ -1,0 +1,17 @@
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Data.deps.json
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Data.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Data.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Core.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Models.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Core.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\bin\Debug\net9.0\Patient.Models.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.csproj.AssemblyReference.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.AssemblyInfoInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.AssemblyInfo.cs
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.csproj.CoreCompileInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient..31C661E4.Up2Date
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\refint\Patient.Data.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\Patient.Data.pdb
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Data\obj\Debug\net9.0\ref\Patient.Data.dll
