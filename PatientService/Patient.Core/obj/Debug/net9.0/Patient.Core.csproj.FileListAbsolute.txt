@@ -13,3 +13,4 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Cor
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\refint\Patient.Core.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.pdb
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\ref\Patient.Core.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Core\obj\Debug\net9.0\Patient.Core.sourcelink.json

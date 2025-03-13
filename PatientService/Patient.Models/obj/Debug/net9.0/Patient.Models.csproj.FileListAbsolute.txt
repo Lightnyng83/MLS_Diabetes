@@ -10,3 +10,4 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Mod
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Models\obj\Debug\net9.0\refint\Patient.Models.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Models\obj\Debug\net9.0\Patient.Models.pdb
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Models\obj\Debug\net9.0\ref\Patient.Models.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.Models\obj\Debug\net9.0\Patient.Models.sourcelink.json

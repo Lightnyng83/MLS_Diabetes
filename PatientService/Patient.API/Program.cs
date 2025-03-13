@@ -1,7 +1,7 @@
 using System;
-using Patient.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.EntityFrameworkCore; // Add this using directive
+using Microsoft.EntityFrameworkCore;
+using Patient.Data.Data; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
