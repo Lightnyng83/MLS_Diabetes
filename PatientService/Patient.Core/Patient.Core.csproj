@@ -7,12 +7,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Patient.Models\Patient.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Mapping\" />
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\Patient.Data\Patient.Data.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

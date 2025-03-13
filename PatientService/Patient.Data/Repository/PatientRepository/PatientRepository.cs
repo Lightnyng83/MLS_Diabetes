@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Patient.Data.Data;
+using Patient.Models.Bdd;
 
 namespace Patient.Data.Repository.PatientRepository
 {

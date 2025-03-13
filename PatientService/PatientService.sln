@@ -13,7 +13,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patient.API", "Patient.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "..\ApiGateway\ApiGateway.csproj", "{0D17C6E4-DC7E-40AD-BB94-68A07B540DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLSDiabetesTests", "MLSDiabetesTests\MLSDiabetesTests.csproj", "{A9B731C9-6930-4559-99AE-328D679E2A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientsTests", "PatientsTests\PatientsTests.csproj", "{373A5388-66C4-4C46-8B0C-2C982AFEB575}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{69FEA1E1-7E55-4C96-BD68-64124DA340B7}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +46,10 @@ Global
 		{0D17C6E4-DC7E-40AD-BB94-68A07B540DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D17C6E4-DC7E-40AD-BB94-68A07B540DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D17C6E4-DC7E-40AD-BB94-68A07B540DFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9B731C9-6930-4559-99AE-328D679E2A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9B731C9-6930-4559-99AE-328D679E2A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9B731C9-6930-4559-99AE-328D679E2A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9B731C9-6930-4559-99AE-328D679E2A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373A5388-66C4-4C46-8B0C-2C982AFEB575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373A5388-66C4-4C46-8B0C-2C982AFEB575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373A5388-66C4-4C46-8B0C-2C982AFEB575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373A5388-66C4-4C46-8B0C-2C982AFEB575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

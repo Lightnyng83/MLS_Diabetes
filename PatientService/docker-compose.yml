@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  patientapi:
+    build:
+      context: .                # Racine de la solution
+      dockerfile: Patient.API/Dockerfile
+    ports:
+      - "5001:8080"             # Mappe le port 8080 du conteneur sur le port 5001 de l'hôte

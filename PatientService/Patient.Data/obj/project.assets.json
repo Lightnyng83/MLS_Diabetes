@@ -2,22 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "AutoMapper/14.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Options": "8.0.0"
-        },
-        "compile": {
-          "lib/net8.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -1674,22 +1658,6 @@
           }
         }
       },
-      "Patient.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AutoMapper": "14.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3",
-          "Patient.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Patient.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Patient.Core.dll": {}
-        }
-      },
       "Patient.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1706,21 +1674,6 @@
     }
   },
   "libraries": {
-    "AutoMapper/14.0.0": {
-      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
-      "type": "package",
-      "path": "automapper/14.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.14.0.0.nupkg.sha512",
-        "automapper.nuspec",
-        "icon.png",
-        "lib/net8.0/AutoMapper.dll",
-        "lib/net8.0/AutoMapper.xml"
-      ]
-    },
     "Azure.Core/1.38.0": {
       "sha512": "IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ==",
       "type": "package",
@@ -4865,11 +4818,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Patient.Core/1.0.0": {
-      "type": "project",
-      "path": "../Patient.Core/Patient.Core.csproj",
-      "msbuildProject": "../Patient.Core/Patient.Core.csproj"
-    },
     "Patient.Models/1.0.0": {
       "type": "project",
       "path": "../Patient.Models/Patient.Models.csproj",
@@ -4882,7 +4830,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
-      "Patient.Core >= 1.0.0"
+      "Patient.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4918,8 +4866,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Lightnyng83\\Desktop\\OpenClassrooms\\Projet 10\\PatientService\\Patient.Core\\Patient.Core.csproj": {
-              "projectPath": "C:\\Users\\Lightnyng83\\Desktop\\OpenClassrooms\\Projet 10\\PatientService\\Patient.Core\\Patient.Core.csproj"
+            "C:\\Users\\Lightnyng83\\Desktop\\OpenClassrooms\\Projet 10\\PatientService\\Patient.Models\\Patient.Models.csproj": {
+              "projectPath": "C:\\Users\\Lightnyng83\\Desktop\\OpenClassrooms\\Projet 10\\PatientService\\Patient.Models\\Patient.Models.csproj"
             }
           }
         }

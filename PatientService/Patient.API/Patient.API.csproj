@@ -6,11 +6,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>3e95280a-b1ed-45b4-a4b4-2fd65b68cefd</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <PreserveCompilationContext>true</PreserveCompilationContext>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	  <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+	  <DefineConstants>$(DefineConstants);TEST</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
@@ -23,10 +29,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Patient.Core\Patient.Core.csproj" />
     <ProjectReference Include="..\Patient.Data\Patient.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controller\" />
   </ItemGroup>
 
 </Project>
