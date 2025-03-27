@@ -51,10 +51,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "CacheManager.Core": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            },
             "MMLib.SwaggerForOcelot": {
               "target": "Package",
               "version": "[8.3.2, )"
@@ -74,10 +70,6 @@
               "version": "[1.21.2, )"
             },
             "Ocelot": {
-              "target": "Package",
-              "version": "[23.4.3, )"
-            },
-            "Ocelot.Cache.CacheManager": {
               "target": "Package",
               "version": "[23.4.3, )"
             },

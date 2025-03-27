@@ -1,32 +1,33 @@
-# Consultez https://aka.ms/customizecontainer pour savoir comment personnaliser votre conteneur de débogage et comment Visual Studio utilise ce Dockerfile pour générer vos images afin d’accélérer le débogage.
-
-# Cet index est utilisé lors de l’exécution à partir de VS en mode rapide (par défaut pour la configuration de débogage)
+# Phase 1 : image runtime ASP.NET
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80
 
-
-# Cette phase est utilisée pour générer le projet de service
+# Phase 2 : build et restore
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
+# On copie les .csproj de chaque sous-projet
 COPY ["Patient.API/Patient.API.csproj", "Patient.API/"]
 COPY ["Patient.Core/Patient.Core.csproj", "Patient.Core/"]
-COPY ["Patient.Models/Patient.Models.csproj", "Patient.Models/"]
 COPY ["Patient.Data/Patient.Data.csproj", "Patient.Data/"]
-RUN dotnet restore "./Patient.API/Patient.API.csproj"
+COPY ["Patient.Models/Patient.Models.csproj", "Patient.Models/"]
+# => Ajoutez les copies pour tous les sous-projets nécessaires
+
+RUN dotnet restore "Patient.API/Patient.API.csproj"
+
+# On copie tout le code restant
 COPY . .
 WORKDIR "/src/Patient.API"
-RUN dotnet build "./Patient.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "Patient.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Cette étape permet de publier le projet de service à copier dans la phase finale
+# Phase 3 : publish
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Patient.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "Patient.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# Cette phase est utilisée en production ou lors de l’exécution à partir de VS en mode normal (par défaut quand la configuration de débogage n’est pas utilisée)
+# Phase 4 : image finale
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .

@@ -2,18 +2,24 @@ version: '3.8'
 services:
   apigateway:
     build:
-      context: ./ApiGateway
-      dockerfile: Dockerfile
-    container_name: apigateway
+      context: .
+      dockerfile: ApiGateway/Dockerfile
     ports:
-      - "5000:8080"
-    depends_on:
-      - patientapi
+      - "5000:80"
+
 
   patientapi:
     build:
-      context: ./Patient.API
-      dockerfile: Dockerfile
+      context: .                      # Le contexte = racine de la solution
+      dockerfile: Patient.API/Dockerfile
     container_name: patientapi
     ports:
-      - "5001:8080"
+      - "5001:80"
+
+  identityservice:
+    build:
+      context: .                      # Le contexte = racine de la solution
+      dockerfile: IdentityService/Dockerfile
+    container_name: identityservice
+    ports:
+      - "5002:80"

@@ -46,60 +46,6 @@
           }
         }
       },
-      "CacheManager.Core/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0"
-        },
-        "compile": {
-          "lib/net8.0/CacheManager.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/CacheManager.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CacheManager.Microsoft.Extensions.Configuration/2.0.0-beta-1629": {
-        "type": "package",
-        "dependencies": {
-          "CacheManager.Core": "2.0.0-beta-1629",
-          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
-          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "CacheManager.Microsoft.Extensions.Logging/2.0.0-beta-1629": {
-        "type": "package",
-        "dependencies": {
-          "CacheManager.Core": "2.0.0-beta-1629",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
-          "Microsoft.Extensions.Logging": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "FluentValidation/11.11.0": {
         "type": "package",
         "compile": {
@@ -795,33 +741,13 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration/9.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.1",
-          "Microsoft.Extensions.Primitives": "9.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
       "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.3"
         },
         "compile": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+          "lib/net9.0/_._": {
             "related": ".xml"
           }
         },
@@ -832,25 +758,6 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Configuration.Binder/9.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.1"
-        },
-        "compile": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/9.0.3": {
@@ -1167,7 +1074,7 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/8.0.0-preview.7.23375.6": {
+      "Microsoft.NETCore.Platforms/1.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1221,7 +1128,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -1320,30 +1227,6 @@
         },
         "runtime": {
           "lib/net8.0/Ocelot.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Ocelot.Cache.CacheManager/23.4.3": {
-        "type": "package",
-        "dependencies": {
-          "CacheManager.Core": "2.0.0-beta-1629",
-          "CacheManager.Microsoft.Extensions.Configuration": "2.0.0-beta-1629",
-          "CacheManager.Microsoft.Extensions.Logging": "2.0.0-beta-1629",
-          "Microsoft.Extensions.Configuration": "9.0.1",
-          "Microsoft.Extensions.Configuration.Binder": "9.0.1",
-          "Microsoft.Extensions.DependencyInjection": "9.0.1",
-          "Microsoft.Extensions.Logging": "9.0.1",
-          "Microsoft.NETCore.Platforms": "8.0.0-preview.7.23375.6",
-          "Ocelot": "23.4.3"
-        },
-        "compile": {
-          "lib/net8.0/Ocelot.Cache.CacheManager.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Ocelot.Cache.CacheManager.dll": {
             "related": ".xml"
           }
         }
@@ -1766,7 +1649,7 @@
           "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -1830,7 +1713,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Drawing.Common.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -2285,7 +2168,7 @@
       "System.Security.AccessControl/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Security.AccessControl.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -2547,7 +2430,7 @@
           "System.Windows.Extensions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Security.Permissions.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -2721,7 +2604,7 @@
           "System.Drawing.Common": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Windows.Extensions.dll": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
@@ -2776,55 +2659,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "CacheManager.Core/2.0.0": {
-      "sha512": "LGIjxWgud4PrygCwFI27jfIRUavUAG6R10MMrdS+pF56/ZvquX0QVSMb+uKTMK5vEbSkQMCVvI7fujh+FoLnGA==",
-      "type": "package",
-      "path": "cachemanager.core/2.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "cachemanager.core.2.0.0.nupkg.sha512",
-        "cachemanager.core.nuspec",
-        "icon.png",
-        "lib/net472/CacheManager.Core.dll",
-        "lib/net472/CacheManager.Core.xml",
-        "lib/net8.0/CacheManager.Core.dll",
-        "lib/net8.0/CacheManager.Core.xml",
-        "lib/netstandard2.0/CacheManager.Core.dll",
-        "lib/netstandard2.0/CacheManager.Core.xml",
-        "lib/netstandard2.1/CacheManager.Core.dll",
-        "lib/netstandard2.1/CacheManager.Core.xml"
-      ]
-    },
-    "CacheManager.Microsoft.Extensions.Configuration/2.0.0-beta-1629": {
-      "sha512": "QX+7h2XSugJh16+TUVtR1PrKxrMV3+sejrsaYECRAAK6LVyPnQguhWf1OHHwsHTI/aQZx0wPOoNP/S2fcehmXA==",
-      "type": "package",
-      "path": "cachemanager.microsoft.extensions.configuration/2.0.0-beta-1629",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "cachemanager.microsoft.extensions.configuration.2.0.0-beta-1629.nupkg.sha512",
-        "cachemanager.microsoft.extensions.configuration.nuspec",
-        "lib/net461/CacheManager.Microsoft.Extensions.Configuration.dll",
-        "lib/net461/CacheManager.Microsoft.Extensions.Configuration.xml",
-        "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Configuration.dll",
-        "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Configuration.xml"
-      ]
-    },
-    "CacheManager.Microsoft.Extensions.Logging/2.0.0-beta-1629": {
-      "sha512": "MKMKg4GFBC0BhvYaK4qGdfIlb7Wz/gMMzudvsjPNV3MWbwvtOgNnZTCaNisFqB8LY58kzik74YtWMEf7ghvV4A==",
-      "type": "package",
-      "path": "cachemanager.microsoft.extensions.logging/2.0.0-beta-1629",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "cachemanager.microsoft.extensions.logging.2.0.0-beta-1629.nupkg.sha512",
-        "cachemanager.microsoft.extensions.logging.nuspec",
-        "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.dll",
-        "lib/netstandard2.0/CacheManager.Microsoft.Extensions.Logging.xml"
       ]
     },
     "FluentValidation/11.11.0": {
@@ -4500,34 +4334,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration/9.0.1": {
-      "sha512": "VuthqFS+ju6vT8W4wevdhEFiRi1trvQtkzWLonApfF5USVzzDcTBoY3F24WvN/tffLSrycArVfX1bThm/9xY2A==",
-      "type": "package",
-      "path": "microsoft.extensions.configuration/9.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net8.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
-        "lib/net462/Microsoft.Extensions.Configuration.dll",
-        "lib/net462/Microsoft.Extensions.Configuration.xml",
-        "lib/net8.0/Microsoft.Extensions.Configuration.dll",
-        "lib/net8.0/Microsoft.Extensions.Configuration.xml",
-        "lib/net9.0/Microsoft.Extensions.Configuration.dll",
-        "lib/net9.0/Microsoft.Extensions.Configuration.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.9.0.1.nupkg.sha512",
-        "microsoft.extensions.configuration.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "Microsoft.Extensions.Configuration.Abstractions/9.0.3": {
       "sha512": "q5qlbm6GRUrle2ZZxy9aqS/wWoc+mRD3JeP6rcpiJTh5XcemYkplAcJKq8lU11ZfPom5lfbZZfnQvDqcUhqD5Q==",
       "type": "package",
@@ -4553,45 +4359,6 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.Configuration.Binder/9.0.1": {
-      "sha512": "w7kAyu1Mm7eParRV6WvGNNwA8flPTub16fwH49h7b/yqJZFTgYxnOVCuiah3G2bgseJMEq4DLjjsyQRvsdzRgA==",
-      "type": "package",
-      "path": "microsoft.extensions.configuration.binder/9.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.dll",
-        "analyzers/dotnet/cs/cs/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/de/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/es/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/fr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/it/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/ja/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/ko/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/pl/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/pt-BR/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/ru/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/tr/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/zh-Hans/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "analyzers/dotnet/cs/zh-Hant/Microsoft.Extensions.Configuration.Binder.SourceGeneration.resources.dll",
-        "buildTransitive/netstandard2.0/Microsoft.Extensions.Configuration.Binder.targets",
-        "lib/net462/Microsoft.Extensions.Configuration.Binder.dll",
-        "lib/net462/Microsoft.Extensions.Configuration.Binder.xml",
-        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "lib/net8.0/Microsoft.Extensions.Configuration.Binder.xml",
-        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "lib/net9.0/Microsoft.Extensions.Configuration.Binder.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
-        "microsoft.extensions.configuration.binder.9.0.1.nupkg.sha512",
-        "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -5094,21 +4861,19 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/8.0.0-preview.7.23375.6": {
-      "sha512": "ym5B/aglUc4K5kkiBOOgsm7EETjenJBbMchAHvcXpfFPmrdTrhnLKC1Tvx5Qnz5kHvhloyCNTpGQvWIpxvINHg==",
+    "Microsoft.NETCore.Platforms/1.1.1": {
+      "sha512": "TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/8.0.0-preview.7.23375.6",
+      "path": "microsoft.netcore.platforms/1.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.8.0.0-preview.7.23375.6.nupkg.sha512",
+        "microsoft.netcore.platforms.1.1.1.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt"
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
@@ -5371,23 +5136,6 @@
         "lib/net8.0/Ocelot.xml",
         "ocelot.23.4.3.nupkg.sha512",
         "ocelot.nuspec"
-      ]
-    },
-    "Ocelot.Cache.CacheManager/23.4.3": {
-      "sha512": "/qNGYGWcisZeepMfGrK5jScWwCX95USw+3gXj3EGE+dBxWRvbhOjjxC5iCGaq1VT+ot2B+7fdSB7UcX86Gs32g==",
-      "type": "package",
-      "path": "ocelot.cache.cachemanager/23.4.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/Ocelot.Cache.CacheManager.dll",
-        "lib/net6.0/Ocelot.Cache.CacheManager.xml",
-        "lib/net7.0/Ocelot.Cache.CacheManager.dll",
-        "lib/net7.0/Ocelot.Cache.CacheManager.xml",
-        "lib/net8.0/Ocelot.Cache.CacheManager.dll",
-        "lib/net8.0/Ocelot.Cache.CacheManager.xml",
-        "ocelot.cache.cachemanager.23.4.3.nupkg.sha512",
-        "ocelot.cache.cachemanager.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -8477,13 +8225,11 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "CacheManager.Core >= 2.0.0",
       "MMLib.SwaggerForOcelot >= 8.3.2",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.21.2",
       "Ocelot >= 23.4.3",
-      "Ocelot.Cache.CacheManager >= 23.4.3",
       "Swashbuckle.AspNetCore >= 8.0.0"
     ]
   },
@@ -8538,10 +8284,6 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "CacheManager.Core": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "MMLib.SwaggerForOcelot": {
             "target": "Package",
             "version": "[8.3.2, )"
@@ -8561,10 +8303,6 @@
             "version": "[1.21.2, )"
           },
           "Ocelot": {
-            "target": "Package",
-            "version": "[23.4.3, )"
-          },
-          "Ocelot.Cache.CacheManager": {
             "target": "Package",
             "version": "[23.4.3, )"
           },
