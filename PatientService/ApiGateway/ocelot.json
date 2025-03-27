@@ -20,7 +20,7 @@
         {
           "Name": "Patient API",
           "Version": "v1",
-          "Url": "http://patientapi/swagger/v1/swagger.json"
+          "Url": "http://patientapi:8080/swagger/v1/swagger.json"
         }
       ]
     }

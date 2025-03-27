@@ -16,7 +16,7 @@ services:
       dockerfile: Patient.API/Dockerfile
     container_name: patientapi
     ports:
-      - "5001:80"
+      - "5001:8080"
 
   identityservice:
     build:
