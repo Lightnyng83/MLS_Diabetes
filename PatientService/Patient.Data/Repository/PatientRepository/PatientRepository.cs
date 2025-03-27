@@ -30,7 +30,6 @@ namespace Patient.Data.Repository.PatientRepository
             return await context.Patients.Where(x => x.FirstName == firstname && x.LastName == lastname).FirstAsync();
         }
 
-
         public async Task<Models.Bdd.Patient> AddPatient(Models.Bdd.Patient patient)
         {
             await using var context = _dbContextFactory.CreateDbContext();

@@ -1,4 +1,7 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Patient.Core.Service.PatientService;
 using Patient.Data.Data;
 using Patient.Data.Repository.PatientRepository; // Add this using directive
@@ -23,6 +26,25 @@ builder.Services.AddAutoMapper(typeof(PatientMappingProfile));
 builder.Services.AddControllers();
 // Autres configurations...
 
+#region Jwt Bearer
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "PAtientAPI",         // même valeur que dans IdentityService
+            ValidAudience = "Doctor",     // même valeur que dans IdentityService
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Uwd%6vbxQ3qGUt1BR8Nh16@e61E8z3brB9FAkP!M6U$*TJJfSHmPKAsV4*3C2FY8"))
+        };
+    });
+
+#endregion
+
 #region Service & Repository
 
 builder.Services.AddScoped<IPatientService, PatientService>();
@@ -39,9 +61,9 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-// Dans ConfigureServices
+app.UseAuthentication();
+app.UseAuthorization();
 
-// Dans Configure (après app.UseRouting())
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -66,3 +88,7 @@ using (var scope = app.Services.CreateScope())
 app.Run();
 
 
+public partial class Program
+{
+    
+}

@@ -144,8 +144,8 @@ namespace PatientsTests
 
                 var patient = new Patient.Models.Bdd.Patient
                 {
-                    FirstName = "John",
-                    LastName = "Doe",
+                    FirstName = "TestNone",
+                    LastName = "Test",
                     BirthDate = new DateOnly(1975, 2, 2),
                     Gender = (int)Gender.Homme
                 };
@@ -161,7 +161,7 @@ namespace PatientsTests
 
             var returnedPatient = await response.Content.ReadFromJsonAsync<PatientViewModel>();
             Assert.NotNull(returnedPatient);
-            Assert.Equal("John", returnedPatient.FirstName);
+            Assert.Equal("TestNone", returnedPatient.FirstName);
 
             await ClearDatabase(testFactory);
         }
@@ -231,7 +231,7 @@ namespace PatientsTests
                 LastName = "Brown",
                 BirthDate = new DateOnly(1985, 3, 3),
                 Gender = (int)Gender.Homme,
-                Address = "New Address"
+                Address = "2 High St"
             };
 
             // Act : appel à PUT /api/patients/1
@@ -244,7 +244,7 @@ namespace PatientsTests
 
             var returnedPatient = await getResponse.Content.ReadFromJsonAsync<PatientViewModel>();
             Assert.NotNull(returnedPatient);
-            Assert.Equal("New Address", returnedPatient.Address);
+            Assert.Equal("2 High St", returnedPatient.Address);
 
             await ClearDatabase(testFactory);
         }

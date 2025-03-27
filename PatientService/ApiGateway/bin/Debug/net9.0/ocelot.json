@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/patient/{everything}",
+      "DownstreamPathTemplate": "/api/Patients/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {

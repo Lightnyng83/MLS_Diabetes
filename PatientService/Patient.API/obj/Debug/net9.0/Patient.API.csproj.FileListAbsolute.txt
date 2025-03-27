@@ -471,3 +471,4 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.API
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.API\obj\Debug\net9.0\Patient.API.pdb
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.API\obj\Debug\net9.0\Patient.API.genruntimeconfig.cache
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.API\obj\Debug\net9.0\ref\Patient.API.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\Patient.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
