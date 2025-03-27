@@ -6,17 +6,14 @@ using MMLib.SwaggerForOcelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Charger la configuration Ocelot
+// Charger la configuration depuis ocelot.json
 builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
-// Ajouter EndpointsApiExplorer et SwaggerGen (nécessaires pour SwaggerForOcelot)
+// Pour .NET 9, ajoutez EndpointsApiExplorer avant SwaggerGen
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gateway API", Version = "v1" });
-});
+builder.Services.AddSwaggerGen();
 
-// Ajouter SwaggerForOcelot (agrège la doc des microservices)
+// Ajouter SwaggerForOcelot
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 
 // Ajouter Ocelot
@@ -24,18 +21,15 @@ builder.Services.AddOcelot(builder.Configuration);
 
 var app = builder.Build();
 
-// Mapper explicitement le chemin "/swagger" pour SwaggerForOcelotUI
-app.Map("/swagger", swaggerApp =>
+// Mapper explicitement le chemin pour SwaggerForOcelotUI afin que les requêtes ne passent pas par Ocelot
+app.UseSwaggerForOcelotUI(opt =>
 {
-    swaggerApp.UseSwaggerForOcelotUI(opt =>
-    {
-        opt.PathToSwaggerGenerator = "/swagger/docs";
-    });
+    opt.PathToSwaggerGenerator = "/swagger/docs";
 });
 
-// Toutes les autres requêtes passent par Ocelot
+
+// Pour toutes les autres requêtes, utiliser Ocelot
 await app.UseOcelot();
 
 app.Run();
 
-public partial class Program { }

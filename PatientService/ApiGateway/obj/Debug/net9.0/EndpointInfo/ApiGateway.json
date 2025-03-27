@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "Gateway API",
-    "version": "v1"
+    "title": "ApiGateway",
+    "version": "1.0"
   },
   "paths": { },
   "components": { }
