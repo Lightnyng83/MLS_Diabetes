@@ -17,6 +17,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContextFactory<PatientDbContext>(o =>
     o.UseSqlServer(connectionString), ServiceLifetime.Scoped);
 #endif
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(PatientMappingProfile));
 builder.Services.AddControllers();
@@ -38,6 +39,14 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+// Dans ConfigureServices
+
+// Dans Configure (après app.UseRouting())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Patient API v1");
+});
 
 app.UseHttpsRedirection();
 
@@ -56,5 +65,4 @@ using (var scope = app.Services.CreateScope())
 
 app.Run();
 
-public partial class Program { }
 

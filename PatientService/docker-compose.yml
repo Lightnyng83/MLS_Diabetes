@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: ApiGateway/Dockerfile
-    container_name: apigateway
     ports:
       - "5000:80"
     depends_on:
@@ -14,7 +13,6 @@ services:
     build:
       context: .
       dockerfile: Patient.API/Dockerfile
-    container_name: patientapi
     ports:
       - "5001:8080"
 
@@ -22,6 +20,5 @@ services:
     build:
       context: .
       dockerfile: IdentityService/Dockerfile
-    container_name: identityservice
     ports:
       - "5002:80"
