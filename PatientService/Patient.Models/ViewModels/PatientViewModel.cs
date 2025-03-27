@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Patient.Models.Bdd
+﻿namespace Patient.Models.Bdd
 {
     public class PatientViewModel
     {
@@ -22,5 +16,5 @@ namespace Patient.Models.Bdd
         public int Gender { get; set; }
     }
 
-    
+
 }

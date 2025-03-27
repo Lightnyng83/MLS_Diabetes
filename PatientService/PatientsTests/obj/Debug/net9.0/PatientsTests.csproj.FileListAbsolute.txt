@@ -1,6 +1,7 @@
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_PatientsTests
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\CoverletSourceRootsMapping_PatientsTests
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\testhost.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.abstractions.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\Patient.API.deps.json
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\Patient.API.runtimeconfig.json
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\appsettings.Development.json
@@ -10,8 +11,6 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTes
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\testhost.exe
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\MvcTestingAppManifest.json
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.runner.visualstudio.testadapter.dll
-C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.runner.reporters.netcoreapp10.dll
-C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.runner.utility.netcoreapp10.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\PatientsTests.deps.json
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\PatientsTests.runtimeconfig.json
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\PatientsTests.dll
@@ -367,7 +366,6 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTes
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\System.Security.Permissions.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\System.Windows.Extensions.dll
-C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.abstractions.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.assert.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.core.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\xunit.execution.dotnet.dll

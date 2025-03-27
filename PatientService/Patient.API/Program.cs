@@ -1,5 +1,3 @@
-using System;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Patient.Core.Service.PatientService;
 using Patient.Data.Data;
@@ -12,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 #if TEST
-builder.Services.AddDbContextFactory<PatientDbContext>(o => 
+builder.Services.AddDbContextFactory<PatientDbContext>(o =>
     o.UseInMemoryDatabase("TestPatientDb"));
 #else
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

@@ -1,10 +1,5 @@
-﻿using Patient.Data.Repository.PatientRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
+using Patient.Data.Repository.PatientRepository;
 using Patient.Models.Bdd;
 
 namespace Patient.Core.Service.PatientService

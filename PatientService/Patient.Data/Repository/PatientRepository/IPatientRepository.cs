@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Patient.Data.Repository.PatientRepository
+﻿namespace Patient.Data.Repository.PatientRepository
 {
     public interface IPatientRepository
     {

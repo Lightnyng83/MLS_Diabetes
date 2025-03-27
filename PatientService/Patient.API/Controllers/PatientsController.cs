@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Patient.Core; // Pour IPatientService
 using Patient.Core.Service.PatientService;
 using Patient.Models.Bdd;
-using System.Threading.Tasks;
 
 namespace Patient.API.Controllers
 {

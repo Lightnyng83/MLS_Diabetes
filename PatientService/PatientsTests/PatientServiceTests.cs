@@ -3,11 +3,6 @@ using Moq;
 using Patient.Core.Service.PatientService;
 using Patient.Data.Repository.PatientRepository;
 using Patient.Models.Bdd;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PatientsTests
 {
