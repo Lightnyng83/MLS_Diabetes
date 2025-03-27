@@ -1,20 +1,38 @@
-using System;
-using Patient.Data;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.EntityFrameworkCore; // Add this using directive
+using Microsoft.EntityFrameworkCore;
+using Patient.Core.Service.PatientService;
+using Patient.Data.Data;
+using Patient.Data.Repository.PatientRepository; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddControllers();
 
+#if TEST
+builder.Services.AddDbContextFactory<PatientDbContext>(o =>
+    o.UseInMemoryDatabase("TestPatientDb"));
+#else
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContextFactory<PatientDbContext>(o => o.UseSqlServer(connectionString), ServiceLifetime.Scoped);
+builder.Services.AddDbContextFactory<PatientDbContext>(o =>
+    o.UseSqlServer(connectionString), ServiceLifetime.Scoped);
+#endif
+
+builder.Services.AddAutoMapper(typeof(PatientMappingProfile));
+builder.Services.AddControllers();
+// Autres configurations...
+
+#region Service & Repository
+
+builder.Services.AddScoped<IPatientService, PatientService>();
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+
+builder.Services.AddScoped<SeedData>();
+
+#endregion
 
 var app = builder.Build();
-
+app.MapControllers();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -23,28 +41,20 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+#region DataSeeder
 
-app.MapGet("/weatherforecast", () =>
+using (var scope = app.Services.CreateScope())
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var services = scope.ServiceProvider;
+    var seedData = services.GetRequiredService<SeedData>();
+    await seedData.Initialize(services);
+}
+
+#endregion
+
+
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+public partial class Program { }
+
