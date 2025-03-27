@@ -1,16 +1,17 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/patient/{everything}",
+      "DownstreamPathTemplate": "/api/Patients/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "patientapi",
-          "Port": 80
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/patient/{everything}",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "SwaggerKey": "PatientService"
     }
   ],
   "SwaggerEndPoints": [

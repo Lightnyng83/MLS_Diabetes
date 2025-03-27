@@ -315,7 +315,6 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ApiGateway.props
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ApiGateway.props
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\ApiGateway.csproj.Up2Date
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\ApiGateway.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\refint\ApiGateway.dll

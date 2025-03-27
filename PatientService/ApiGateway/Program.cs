@@ -26,6 +26,7 @@ app.UseSwaggerForOcelotUI(opt =>
 {
     opt.PathToSwaggerGenerator = "/swagger/docs";
 });
+await Task.Delay(TimeSpan.FromSeconds(5));
 
 // Pour toutes les autres requêtes, utiliser Ocelot
 await app.UseOcelot();

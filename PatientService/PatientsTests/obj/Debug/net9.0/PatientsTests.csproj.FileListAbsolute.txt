@@ -1,0 +1,9 @@
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_PatientsTests
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\CoverletSourceRootsMapping_PatientsTests
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.csproj.AssemblyReference.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\MvcTestingAppManifest.json
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.AssemblyInfoInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.AssemblyInfo.cs
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.csproj.CoreCompileInputs.cache
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.sourcelink.json

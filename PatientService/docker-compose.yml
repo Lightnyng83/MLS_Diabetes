@@ -1,10 +1,11 @@
 services:
+
   apigateway:
     build:
       context: .
       dockerfile: ApiGateway/Dockerfile
     ports:
-      - "5000:80"
+      - "5000:8080"
     depends_on:
       - patientapi
       - identityservice
@@ -15,10 +16,13 @@ services:
       dockerfile: Patient.API/Dockerfile
     ports:
       - "5001:8080"
-
+    networks:
+      default:
+        aliases:
+          - patientapi
   identityservice:
     build:
       context: .
       dockerfile: IdentityService/Dockerfile
     ports:
-      - "5002:80"
+      - "5002:8080"
