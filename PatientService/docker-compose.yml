@@ -28,31 +28,31 @@ services:
           - identityservice
 
   patientapi:
-    container_name: patientapi  
-    build:
-      context: .
-      dockerfile: Patient.API/Dockerfile
-    ports:
-      - "5001:8080"
-    networks:
-      patientservice_default:
-        aliases:
-          - patientapi
+      container_name: patientapi
+      build:
+        context: .
+        dockerfile: Patient.API/Dockerfile
+      ports:
+        - "5001:8080"
+      networks:
+        patientservice_default:
+          aliases:
+            - patientapi
+
 
   apigateway:
-    container_name: apigateway  
-    build:
-      context: .
-      dockerfile: ApiGateway/Dockerfile
-    ports:
-      - "5000:8080"
-    depends_on:
-      - patientapi
-      - identityservice
-    networks:
-      patientservice_default:
-        aliases:
-          - apigateway
+      build:
+        context: .
+        dockerfile: ApiGateway/Dockerfile
+      ports:
+        - "5000:8080"
+      depends_on:
+        - patientapi
+        - identityservice
+      networks:
+        patientservice_default:
+          aliases:
+            - apigateway
 
   frontend:
     build:

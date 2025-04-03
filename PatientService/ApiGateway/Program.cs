@@ -32,11 +32,7 @@ builder.Services.AddAuthentication(options =>
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Uwd%6vbxQ3qGUt1BR8Nh16@e61E8z3brB9FAkP!M6U$*TJJfSHmPKAsV4*3C2FY8"))
         };
     });
-builder.Services.AddHttpClient("ApiGateway", client =>
-{
-    client.BaseAddress = new Uri("http://host.docker.internal:5000");
 
-});
 
 #endregion
 

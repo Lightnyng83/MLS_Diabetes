@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Ajoutez HttpClient
 builder.Services.AddHttpClient("ApiGateway", client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5000"); // URL de l'API Gateway
+    client.BaseAddress = new Uri("http://localhost:8000"); // URL de l'API Gateway
 });
 
 // Pour faciliter l'injection dans les contrôleurs, vous pouvez enregistrer le HttpClient par défaut:
