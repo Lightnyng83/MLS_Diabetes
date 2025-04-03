@@ -106,4 +106,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+#region ----- INITIALIZATION -----
+
+SeedData.Initialize(app.Services);
+
+#endregion ----- INITIALIZATION -----
+
 app.Run();

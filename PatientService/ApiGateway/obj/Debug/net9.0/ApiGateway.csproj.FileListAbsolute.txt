@@ -321,3 +321,5 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\ApiGateway.pdb
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\ApiGateway.genruntimeconfig.cache
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\ref\ApiGateway.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\ApiGateway\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
