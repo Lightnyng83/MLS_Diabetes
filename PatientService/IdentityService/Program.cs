@@ -6,16 +6,17 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using SQLitePCL;
+
+SQLitePCL.Batteries.Init();
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuration de la chaîne de connexion pour Identity
-var connectionString = builder.Configuration.GetConnectionString("IdentityConnection")
-                       ?? "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=IdentityServiceDB";
 
-// Enregistrer le DbContext d'identité
+// Configuration de la chaîne de connexion pour Identity
 builder.Services.AddDbContext<IdentityDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlite(builder.Configuration.GetConnectionString("IdentityConnection")));
+
 
 // Configurer Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

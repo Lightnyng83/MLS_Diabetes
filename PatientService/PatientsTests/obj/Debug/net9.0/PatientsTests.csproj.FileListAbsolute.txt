@@ -471,3 +471,4 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTes
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.pdb
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\PatientsTests.genruntimeconfig.cache
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\obj\Debug\net9.0\ref\PatientsTests.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\PatientsTests\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

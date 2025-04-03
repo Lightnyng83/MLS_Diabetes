@@ -5,7 +5,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "apigateway", // ou un autre service si vous avez une page dédiée
+          "Host": "apigateway",
           "Port": 8080
         }
       ],

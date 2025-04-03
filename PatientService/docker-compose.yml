@@ -1,4 +1,36 @@
+version: '3.8'
 services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Your_password123
+    ports:
+      - "1433:1433"
+    networks:
+      - patientservice_default
+
+  identityservice:
+    build:
+      context: .
+      dockerfile: IdentityService/Dockerfile
+    environment:
+      - ConnectionStrings__IdentityConnection=Server=sqlserver;Database=IdentityServiceDB;User Id=sa;Password=Your_password123;
+    depends_on:
+      - sqlserver
+    ports:
+      - "5002:8080"
+    networks:
+      - patientservice_default
+
+  patientapi:
+    build:
+      context: .
+      dockerfile: Patient.API/Dockerfile
+    ports:
+      - "5001:8080"
+    networks:
+      - patientservice_default
 
   apigateway:
     build:
@@ -9,20 +41,20 @@ services:
     depends_on:
       - patientapi
       - identityservice
-
-  patientapi:
-    build:
-      context: .
-      dockerfile: Patient.API/Dockerfile
-    ports:
-      - "5001:8080"
     networks:
-      default:
-        aliases:
-          - patientapi
-  identityservice:
-    build:
-      context: .
-      dockerfile: IdentityService/Dockerfile
-    ports:
-      - "5002:8080"
+      - patientservice_default
+
+  # frontend:
+  #   build:
+  #     context: ./Front
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "4200:80"
+  #   depends_on:
+  #     - apigateway
+  #   networks:
+  #     - patientservice_default
+
+networks:
+  patientservice_default:
+    driver: bridge
