@@ -41,11 +41,12 @@ services:
 
 
   apigateway:
+      container_name: apigateway
       build:
         context: .
         dockerfile: ApiGateway/Dockerfile
       ports:
-        - "5000:8080"
+        - "5000:8080"  # Expose le port 8080 du conteneur sur le port 5000 de l'h te
       depends_on:
         - patientapi
         - identityservice
@@ -54,16 +55,18 @@ services:
           aliases:
             - apigateway
 
+
   frontend:
       container_name: front
       build:
         context: .
         dockerfile: Front/Dockerfile
       ports:
-        - "4200:8080"
+        - "4200:80"  # Expose le port 80 du conteneur sur le port 4200 de l'h te
       networks:
-        - patientservice_default
-
+        patientservice_default:
+          aliases:
+            - front
 
 networks:
   patientservice_default:
