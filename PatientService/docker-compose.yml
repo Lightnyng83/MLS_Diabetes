@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: IdentityService/Dockerfile
     environment:
-      - ConnectionStrings__IdentityConnection=Server=sqlserver;Database=IdentityServiceDB;User Id=sa;Password=Your_password123;
+      - ConnectionStrings__IdentityConnection=Data Source=IdentityService.db;
     depends_on:
       - sqlserver
     ports:

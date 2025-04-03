@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using IdentityService.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace IdentityService.Data
@@ -6,7 +7,7 @@ namespace IdentityService.Data
     public class SeedData
     {
         private static readonly string doctorEmail = "doctor@example.com"; //Identifiant de connexion du médecin
-        private static readonly string doctorPassword = "doctor@123"; //Mot de passe du médecin
+        private static readonly string doctorPassword = "Doctor@123"; //Mot de passe du médecin
 
         public static async void Initialize(IServiceProvider serviceProvider)
         {
@@ -21,7 +22,7 @@ namespace IdentityService.Data
             #region ----- ADDING USERS -----
 
             // Récupérer les services UserManager et RoleManager
-            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
             // Vérifier si le rôle "Doctor" existe, sinon le créer
@@ -39,7 +40,7 @@ namespace IdentityService.Data
 
             if (await userManager.FindByEmailAsync("doctor@example.com") == null)
             {
-                var user = new IdentityUser
+                var user = new ApplicationUser
                 {
                     UserName = doctorEmail,
                     Email = doctorEmail,

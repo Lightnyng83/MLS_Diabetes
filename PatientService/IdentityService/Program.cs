@@ -14,8 +14,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // Configuration de la chaîne de connexion pour Identity
+var connectionString = builder.Configuration.GetConnectionString("IdentityConnection")
+                       ?? "Data Source=IdentityService.db";
 builder.Services.AddDbContext<IdentityDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("IdentityConnection")));
+    options.UseSqlite(connectionString));
+
 
 
 // Configurer Identity
