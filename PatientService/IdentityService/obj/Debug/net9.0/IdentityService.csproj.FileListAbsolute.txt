@@ -202,3 +202,4 @@ C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\IdentitySer
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\IdentityService\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\IdentityService\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\IdentityService\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Lightnyng83\Desktop\OpenClassrooms\Projet 10\PatientService\IdentityService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

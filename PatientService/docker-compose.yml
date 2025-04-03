@@ -8,31 +8,39 @@ services:
     ports:
       - "1433:1433"
     networks:
-      - patientservice_default
+      patientservice_default:
+        aliases:
+          - sqlserver
 
   identityservice:
     build:
       context: .
       dockerfile: IdentityService/Dockerfile
     environment:
-      - ConnectionStrings__IdentityConnection=Data Source=IdentityService.db;
+      - ConnectionStrings__IdentityConnection=Data Source=IdentityService.db
     depends_on:
       - sqlserver
     ports:
       - "5002:8080"
     networks:
-      - patientservice_default
+      patientservice_default:
+        aliases:
+          - identityservice
 
   patientapi:
+    container_name: patientapi  
     build:
       context: .
       dockerfile: Patient.API/Dockerfile
     ports:
       - "5001:8080"
     networks:
-      - patientservice_default
+      patientservice_default:
+        aliases:
+          - patientapi
 
   apigateway:
+    container_name: apigateway  
     build:
       context: .
       dockerfile: ApiGateway/Dockerfile
@@ -42,18 +50,20 @@ services:
       - patientapi
       - identityservice
     networks:
-      - patientservice_default
+      patientservice_default:
+        aliases:
+          - apigateway
 
-  # frontend:
-  #   build:
-  #     context: ./Front
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "4200:80"
-  #   depends_on:
-  #     - apigateway
-  #   networks:
-  #     - patientservice_default
+  frontend:
+    build:
+      context: ./Front
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - apigateway
+    networks:
+      - patientservice_default
 
 networks:
   patientservice_default:

@@ -1,19 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/swagger",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "apigateway",
-          "Port": 8080
-        }
-      ],
-      "UpstreamPathTemplate": "/",
-      "UpstreamHttpMethod": [ "GET" ]
-    },
-    {
-      "DownstreamPathTemplate": "/api/Patients/{everything}",
+      "DownstreamPathTemplate": "/api/patient/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
