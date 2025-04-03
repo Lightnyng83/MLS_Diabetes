@@ -21,7 +21,8 @@ namespace Front.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpPost("Login")]
+        [IgnoreAntiforgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
@@ -32,8 +33,6 @@ namespace Front.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadAsStringAsync();
-                // Stockez le token (ex. via cookies ou session)
-                // Puis redirigez vers la page CRUD
                 return RedirectToAction("Index", "Patients");
             }
             else
