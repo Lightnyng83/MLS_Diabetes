@@ -37,6 +37,7 @@ namespace IdentityServiceControllers
         }
 
         [HttpPost("login")]
+        [IgnoreAntiforgeryToken]
         public async Task<IActionResult> Login([FromBody] ApplicationUser.LoginModel model)
         {
             if (!ModelState.IsValid)
