@@ -22,13 +22,12 @@ namespace Front.Controllers
         }
 
         [HttpPost]
-        [IgnoreAntiforgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
 
-            // Appel à l'API Gateway pour s'authentifier (exemple)
+            // Appel à l'API Gateway pour s'authentifier
             var response = await _httpClient.PostAsJsonAsync("/api/auth/login", model);
             if (response.IsSuccessStatusCode)
             {
