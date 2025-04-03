@@ -10,8 +10,10 @@ builder.Services.AddHttpClient("ApiGateway", client =>
 });
 
 // Pour faciliter l'injection dans les contrôleurs, vous pouvez enregistrer le HttpClient par défaut:
-builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("ApiGateway"));
-
+builder.Services.AddScoped<HttpClient>(sp =>
+{
+    return sp.GetRequiredService<IHttpClientFactory>().CreateClient("ApiGateway");
+});
 builder.Services.AddControllersWithViews(options =>
 {
     options.Filters.Add(new IgnoreAntiforgeryTokenAttribute());
@@ -29,9 +31,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapDefaultControllerRoute();
 
 
 app.Run();

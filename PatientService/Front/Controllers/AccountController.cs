@@ -6,6 +6,7 @@ using System.Net.Http.Json;
 
 namespace Front.Controllers
 {
+    [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
         private readonly HttpClient _httpClient;
@@ -21,18 +22,18 @@ namespace Front.Controllers
             return View();
         }
 
-        [HttpPost("Login")]
+        [HttpPost]
         [IgnoreAntiforgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
                 return View(model);
 
-            // Appel à l'API Gateway pour s'authentifier
             var response = await _httpClient.PostAsJsonAsync("/api/auth/login", model);
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadAsStringAsync();
+                // Stockez le token et redirigez vers la page CRUD
                 return RedirectToAction("Index", "Patients");
             }
             else
